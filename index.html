@@ -1,1 +1,72 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Maths Partner</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Container body -->
+    <div class="container">
 
+        <!-- Heading and History Navigation -->
+        <div class="navigation">
+            
+            <a href="#">
+                <h1>
+                    Maths Partner
+                </h1>
+            </a>
+
+            <button class="button">
+                <a href="history.html">HISTORY ⟹</a>
+            </button>
+        </div>
+
+        <!-- User input -->
+        <div class="prob-section">
+                <div class="user-input">
+                    <label for="prob">Problem</label>
+                    <input id="prob" type="text" placeholder="Type problem here...">
+                </div>
+
+                <div class="user-select">
+                    <label for="cat">Select Category</label>
+                    <select name="cat" id="cat">
+                        <option value="simplify">Simplify</option>
+                        <option value="factor">Factor</option>
+                        <option value="derive">Derive</option>
+                        <option value="integrate">Integrate</option>
+                        <option value="zeroes">Find 0's</option>
+                        <option value="tangent">Find Tangent</option>
+                        <option value="area">Area Under Curve</option>
+                        <option value="cos">Cosine</option>
+                        <option value="sin">Sine</option>
+                        <option value="tan">Tangent</option>
+                        <option value="arccos">Inverse Cosine</option>
+                        <option value="arcsin">Inverse Sine</option>
+                        <option value="arctan">Inverse Tangent</option>
+                        <option value="abs">Absolute Value</option>
+                        <option value="log">Logarithm</option>
+                    </select>
+                </div>
+
+                <button class="submitbtn" id="submitbtn" type="submit" onclick="findSol()">Search</button>
+        </div>
+
+        <!-- Solution -->
+        <div id="sol-section" class="sol-section">
+            <h3 id="prob-head">Example</h3>
+            <p id="prob-sol">Example solution</p>
+            <button id="clear-sol" onclick="clearSol()">Clear</button>
+        </div>
+    </div>
+</body>
+</html>
